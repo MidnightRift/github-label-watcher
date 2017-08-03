@@ -1,0 +1,12 @@
+{
+  "name": "github-watcher",
+  "description": "Github watcher",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bluebird": "^3.5.0",
+    "fs-extra": "^4.0.1",
+    "github": "^9.2.0"
+  }
+}
