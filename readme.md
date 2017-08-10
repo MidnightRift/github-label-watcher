@@ -1,4 +1,4 @@
-# Gihub Label Watcher
+# Github Label Watcher
 
 - This is a label watcher for github, its designed to send messages to slack. Change the fields in github watcher that are like `<INSERT something here.>`
 - in the axios calls you can have as many calls as you want to your differnt slack channels just insert the required URL.
