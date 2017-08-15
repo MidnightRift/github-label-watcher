@@ -41,12 +41,12 @@ github.issues.getForRepo({
                 text: '<!everyone|everyone>',
                 attachments: [
                     {
-                        'fallback': 'New master -> stable',
-                        'pretext': '*New master -> stable*',
+                        //'fallback': 'New master -> stable',
+                        //'pretext': '',
                         'title': 'PR: ' + wantedData.number + ' - ' + wantedData.title,
                         'title_link': wantedData.html_url,
                         'text': wantedData.body,
-                        'color': '#7CD197',
+                        'color': 'warning',
                         'mrkdwn_in': ['title', 'pretext']
                     }
                 ]
@@ -62,6 +62,8 @@ github.issues.getForRepo({
                 ff.save(wantedData.id)
             })
         }
+    }).catch(function (err) {
+        console.log(err);
     })
 }).catch(function (err) {
     if (!err === 'No PR') {
